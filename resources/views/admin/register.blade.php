@@ -66,8 +66,7 @@
   data-animsition-out="fade-out">>
     <div class="page-content vertical-align-middle">
       <div class="brand">
-        <img class="brand-img" src="{{{ asset('/static/admin/images/logo.png') }}}" alt="...">
-        <h2 class="brand-text">HalalAceh</h2>
+        <img class="brand-img" width="180" src="{{{ asset('static/img/logo_2x.png') }}}" alt="...">
       </div>
       <p>Sign up to find interesting thing</p>
       <form method="post" role="form">
@@ -91,7 +90,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-block">Register</button>
       </form>
-      <p>Have account already? Please go to <a href="login.html">Sign In</a></p>
+      <p>Have account already? Please go to <a href="{{ route('account_login') }}">Sign In</a></p>
 
       <footer class="page-copyright">
         <div class="social">

@@ -75,8 +75,8 @@
         <i class="icon wb-search" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="{{{ asset('/static/admin/images/logo.png') }}}" title="Remark">
-        <span class="navbar-brand-text"> Remark</span>
+        
+        <span class="navbar-brand-text"> Halal Aceh | Admin</span>
       </div>
     </div>
 
@@ -108,20 +108,20 @@
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
             data-animation="slide-bottom" role="button">
               <span class="avatar avatar-online">
-                <img src="{{{ asset('/static/admin/portraits/5.jpg') }}}" alt="...">
+                <img style="width: 30px; height: 30px;" src="{{{ asset('media/user') }}}/{{ $profile->photo_profile }}" alt="...">
                 <i></i>
               </span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon fa fa-user" aria-hidden="true"></i> Profile</a>
+                <a href="{{ route('account_profile') }}" role="menuitem"><i class="icon fa fa-user" aria-hidden="true"></i> Profile</a>
               </li>
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon fa fa-lock" aria-hidden="true"></i> Settings</a>
+                <a href="{{ route('account_settings') }}" role="menuitem"><i class="icon fa fa-lock" aria-hidden="true"></i> Settings</a>
               </li>
               <li class="divider" role="presentation"></li>
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+                <a href="{{ route('account_logout') }}" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
               </li>
             </ul>
           </li>
@@ -198,15 +198,15 @@
           <tbody>
             @foreach ($directory as $data)
             <tr>
-              <td>6</td>
+              <td><img width="40" src="{{{ asset('media/directory') }}}/{{ unserialize($data->images)[0] }}"></td>
               <td>{{ $data->name }}</td>
               <td>{{ $data->created_at }}</td>
               <td style="text-align: center;">{{ $data->viewer }}</td>
               <td class="text-nowrap">
-                <a href="#" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Edit">
+                <a href="{{ route('account_edit_directory', ['id' => $data->id]) }}" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Edit">
                   <i class="icon wb-wrench" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Delete">
+                <a href="{{ route('delete_directory', ['id' => $data->id]) }}" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Delete">
                   <i class="icon wb-close" aria-hidden="true"></i>
                 </a>
               </td>
@@ -215,15 +215,26 @@
 
           </tbody>
         </table>
-      </div>
 
+      </div>
 
 
     </div>
 
+     <div class="text-center">
+                    <ul class="pagination">
+                        {{ $directory->links() }}
+                    </ul>
+      </div><!-- end pagination-->
+
   </div>
+
+
+
                          
   </div>
+
+
   <!-- End Page -->
 
   <script src="http://maps.google.com/maps/api/js?sensor=false"></script>

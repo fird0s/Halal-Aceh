@@ -35,8 +35,18 @@
   <script src="{{{ asset('/static/admin/js/components/switchery.js') }}}"></script>
   <script src="{{{ asset('/static/admin/js/components/gmaps.js') }}}"></script>
   <script src="{{{ asset('/static/admin/js/components/matchheight.js') }}}"></script>
+   <script src="{{{ asset('/static/admin/vendor/bootstrap-datepicker/bootstrap-datepicker.min.js') }}}"></script>
+
+  <!-- CKEDITOR  -->
+  <script src="{{{ asset('/static/plugins/ckeditor/ckeditor.js') }}}"></script>
 
   <script>
+
+  $('.datepicker').datepicker({
+    yearRange: "1900:+nn"
+  });
+
+
     $(document).ready(function($) {
       Site.run();
 

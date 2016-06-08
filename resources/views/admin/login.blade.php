@@ -66,8 +66,7 @@
   data-animsition-out="fade-out">>
     <div class="page-content vertical-align-middle">
       <div class="brand">
-        <img class="brand-img" src="{{{ asset('/static/admin/images/logo.png') }}}" alt="...">
-        <h2 class="brand-text">HalalAceh</h2>
+        <img class="brand-img" width="180" src="{{{ asset('static/img/logo_2x.png') }}}" alt="...">
       </div>
       <p>Sign into your account</p>
       @if (Session::has('error'))
@@ -96,7 +95,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-block">Sign in</button>
       </form>
-      <p>Still no account? Please go to <a href="register.html">Register</a></p>
+      <p>Still no account? Please go to <a href="{{ route('account_register') }}">Register</a></p>
 
       <footer class="page-copyright">
         <div class="social">

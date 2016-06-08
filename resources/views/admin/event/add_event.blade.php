@@ -35,6 +35,10 @@
   <link rel="stylesheet" href="{{{ asset('/static/admin/fonts/font-awesome/font-awesome.min.css') }}}">
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
 
+  <!-- Datepicker -->
+  <link rel="stylesheet" href="{{{ asset('/static/admin/vendor/bootstrap-datepicker/bootstrap-datepicker.min.css') }}}">
+
+
 
   <!--[if lt IE 9]>
     <script src="{{{ asset('/static/admin/vendor/html5shiv/html5shiv.min.js') }}}"></script>
@@ -75,8 +79,8 @@
         <i class="icon wb-search" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="{{{ asset('/static/admin/images/logo.png') }}}" title="Remark">
-        <span class="navbar-brand-text"> Remark</span>
+        
+        <span class="navbar-brand-text"> Halal Aceh | Admin</span>
       </div>
     </div>
 
@@ -108,20 +112,20 @@
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
             data-animation="slide-bottom" role="button">
               <span class="avatar avatar-online">
-                <img src="{{{ asset('/static/admin/portraits/5.jpg') }}}" alt="...">
+                <img style="width: 30px; height: 30px;" src="{{{ asset('media/user') }}}/{{ $profile->photo_profile }}" alt="...">
                 <i></i>
               </span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon fa fa-user" aria-hidden="true"></i> Profile</a>
+                <a href="{{ route('account_profile') }}" role="menuitem"><i class="icon fa fa-user" aria-hidden="true"></i> Profile</a>
               </li>
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon fa fa-lock" aria-hidden="true"></i> Settings</a>
+                <a href="{{ route('account_settings') }}" role="menuitem"><i class="icon fa fa-lock" aria-hidden="true"></i> Settings</a>
               </li>
               <li class="divider" role="presentation"></li>
               <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+                <a href="{{ route('account_logout') }}" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
               </li>
             </ul>
           </li>
@@ -184,9 +188,9 @@
                 <div class="form-group">
                     <label for="address-map">Date</label>
                     <div class="input-daterange input-group" id="datepicker">
-                        <input type="text" data-provide="datepicker-inline" class="input-sm form-control" name="event_date_start">
+                        <input type="text" class="input-sm form-control datepicker" data-date-format="yyyy/mm/dd" name="event_date_start">
                         <span class="input-group-addon">to</span>
-                        <input type="text" class="input-sm form-control" name="event_date_end">
+                        <input type="text" class="input-sm form-control datepicker" data-date-format="yyyy/mm/dd" name="event_date_end">
                     </div>
                 </div>
                 
@@ -205,8 +209,8 @@
                 </div>
                 <div class="form-group">
                     <label for="address-map">Time</label>
-                    <div class="input-daterange input-group" id="datepicker">
-                        <input type="text" data-provide="datepicker-inline" class="input-sm form-control" name="time_start">
+                    <div class="input-daterange input-group">
+                        <input type="text" class="input-sm form-control"  name="time_start">
                         <span class="input-group-addon">to</span>
                         <input type="text" class="input-sm form-control" name="time_end">
                     </div>
@@ -228,6 +232,7 @@
             </div>
 
             <div class="clear"></div>
+
 
             <div class="form-group" style="padding: 0px 15px 0px 15px;">
                     <label>Location</label>

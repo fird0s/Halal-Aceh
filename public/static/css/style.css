@@ -816,20 +816,20 @@ a#email_footer:before{
 	text-transform:uppercase;
 }
 #hero_video a.video{display:none;}
-iframe, video {
+i/*frame, video {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-iframe {
+/*iframe {
   height: 100%;
   width: 100%;
 }
 video {
   width: 100%;
-}
+}*/*/
 .teaser-video {
   width: 100%;
   height: auto; 
@@ -3289,7 +3289,7 @@ font-weight:400;
 /* Promo_full (v.1.7)*/
 .promo_full {
 	height:auto;
-	background: url(../img/home_bg_2.jpg) no-repeat center center;
+	background: url(../img/foto1.png) no-repeat center center;
 	background-attachment:fixed;
 	background-size:cover;
 	-webkit-background-size: cover;
