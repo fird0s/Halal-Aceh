@@ -105,7 +105,7 @@ class Portal extends Controller
 
 
      public function tourist_attraction(Request $request){
-        $tourist_attraction = DB::table('tourist_location')->where('category_id', 4)->orderBy('id', 'dsc')->get();
+        $tourist_attraction = DB::table('tourist_location')->where('category_id', 4)->orderBy('id', 'dsc')->paginate(4);
         $category = DB::table('category_directory')->orderBy('id', 'dsc')->get();
         return view('portal/tourist_attraction/tourist_attraction', compact("tourist_attraction", "category"));
 
