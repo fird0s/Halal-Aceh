@@ -25,7 +25,7 @@ class Portal extends Controller
     }
 
     public function spot_category(Request $request, $category){
-        $list = DB::table('tourist_location')->where('category_id', $category)->get();
+        $list = DB::table('tourist_location')->where('category_id', $category)->orderBy('id', 'dsc')->paginate(4);
     
         $category = DB::table('category_directory')->get();        
 
