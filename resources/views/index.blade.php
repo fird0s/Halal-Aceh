@@ -275,9 +275,9 @@
             <div class="row add_bottom_45">
                 <div class="col-md-4 other_tours">
                     <ul>
-                        <li><a href="#"><i class="icon_set_1_icon-1"></i>Baiturrahman Mosque<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'masjid-raya-baiturrahman') }}"><i class="icon_set_1_icon-1"></i>Baiturrahman Mosque<span class="other_tours_price"></span></a>
                         </li>
-                        <li><a href="#"><i class="icon_set_1_icon-4"></i>Tsunami Meusium<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'meusium-tsunami') }}"><i class="icon_set_1_icon-4"></i>Tsunami Meusium<span class="other_tours_price"></span></a>
                         </li>
                         <li><a href="#"><i class="icon_set_1_icon-44"></i>Putroe Phang dan Pinto Khop Garden<span class="other_tours_price"></span></a>
                         </li>
@@ -287,24 +287,24 @@
                 </div>
                 <div class="col-md-4 other_tours">
                     <ul>
-                        <li><a href="#"><i class="icon_set_1_icon-1"></i>Kher Koff<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'kerkhof') }}"><i class="icon_set_1_icon-1"></i>Kher Koff<span class="other_tours_price"></span></a>
                         </li>
                         <li><a href="#"><i class="icon_set_1_icon-4"></i>Ulee Lheue Beach<span class="other_tours_price"></span></a>
                         </li>
                         <li><a href="#"><i class="icon_set_1_icon-30"></i>PLTD Apung<span class="other_tours_price"></span></a>
                         </li>
-                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Kuburan Massal<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'kuburan-massal-ule-lhee') }}"><i class="icon_set_1_icon-3"></i>Kuburan Massal<span class="other_tours_price"></span></a>
                         </li>
                         
                     </ul>
                 </div>
                 <div class="col-md-4 other_tours">
                     <ul>
-                        <li><a href="#"><i class="icon_set_1_icon-37"></i>Putro Phang Garden<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'taman-putroe-phang') }}"><i class="icon_set_1_icon-37"></i>Putro Phang Garden<span class="other_tours_price"></span></a>
                         </li>
-                        <li><a href="#"><i class="icon_set_1_icon-1"></i>Gunongan<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'gunongan') }}"><i class="icon_set_1_icon-1"></i>Gunongan<span class="other_tours_price"></span></a>
                         </li>
-                        <li><a href="#"><i class="icon_set_1_icon-50"></i>Boat on The House<span class="other_tours_price"></span></a>
+                        <li><a href="{{ route('get_tourist_attraction', 'boat-di-atas-rumah') }}"><i class="icon_set_1_icon-50"></i>Boat on The House<span class="other_tours_price"></span></a>
                         </li>
                         <li><a href="#"><i class="icon_set_1_icon-44"></i>Tour Eiffel<span class="other_tours_price"></span></a>
                         </li>
