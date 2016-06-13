@@ -583,7 +583,7 @@ $('input').iCheck({
         }).addTo(mymap);
 
 
-        L.marker([51.5, -0.09]).addTo(mymap)
+        L.marker([{{ $get_tour->latitude }}, {{ $get_tour->longtitude }}]).addTo(mymap)
             .bindPopup("<b>{{ $get_tour->package_name }}</b>").openPopup();
 
 
