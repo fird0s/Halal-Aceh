@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="template, tour template, Syariah Trip in Aceh, Syariah Trip in Aceh, tours tickets, transfers, travel, travel template" />
-    <meta name="description" content="Citytours - Premium site template for Syariah Trip in Aceh agencies, transfers and tickets.">
+    <meta name="keywords" content="syariah Trip in Aceh, Syariah Trip in Aceh, tours tickets, transfers, travel, travel template" />
+    <meta name="description" content="Halal Aceh - Syariah Trip in Aceh agencies, transfers and tickets.">
     <meta name="author" content="Ansonika">
     <title>Halal Aceh - Syariah Trip in Aceh</title>
     

@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="template, tour template, city tours, city tour, tours tickets, transfers, travel, travel template" />
-    <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
+    <meta name="keywords" content="template, tour template, Halal Aceh, tours tickets, transfers, travel, travel template" />
+    <meta name="description" content="Halal Aceh - Syariah Trip in Aceh, transfers and tickets.">
     <meta name="author" content="Ansonika">
     <title>Halal Aceh - Syariah Trip in Aceh</title>
     
@@ -194,7 +194,7 @@
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
                 <div class="feature">
                     <i class="icon_set_1_icon-41"></i>
-                    <h3><span>+120</span> Premium city tours</h3>
+                    <h3><span>+120</span> Premium Halal Aceh</h3>
                     <p>
                         Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
                     </p>
