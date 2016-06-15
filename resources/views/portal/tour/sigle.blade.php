@@ -575,7 +575,7 @@ $('input').iCheck({
 
 <script type="text/javascript">
     
-    var mymap = L.map('mapid').setView([{{ $get_tour->latitude }}, {{ $get_tour->longtitude }}], 13);
+    var mymap = L.map('mapid').setView([{{ $get_tour->latitude }}, {{ $get_tour->longtitude }}], 18);
 
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
             maxZoom: 18,

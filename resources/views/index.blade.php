@@ -331,7 +331,7 @@
             <p>
                 We provide all your need to make you happy. Enjoy, Tasted, and Free.
             </p>
-            <a href="https://www.youtube.com/watch?v=wprG6HA7IV8" class="video"><i class="icon-play-circled2-1"></i></a>
+            <a href="https://www.youtube.com/watch?v=mnK7j7TEu-s" class="video"><i class="icon-play-circled2-1"></i></a>
         </div>
     </div>
     </section><!-- End section -->
